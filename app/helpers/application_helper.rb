@@ -39,5 +39,16 @@ module ApplicationHelper
         "#{opening[rand(5)]} #{middle[rand(5)]} #{ending[rand(5)]}"
 
     end
+    def count_to_10
+        x = 2
+        number_list = "1"
+
+        loop do
+            number_list = number_list + ", " + x.to_s
+            x += 1
+            break if x > 10
+        end
+        "#{number_list}"
+    end
     
 end
